@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+.picture_container {
+  position: relative;
+ width: 100%;
+ height: calc(100vh - 80px);
+ background-image: url("https://lumiere-a.akamaihd.net/v1/images/eu_mpr_promo_emily-blunt_hero_r_dbd0d251.jpeg?region=0,0,2000,835&width=1920&optimize=true");
+ background-size: cover;
+}
+.title_box {
+  position: absolute;
+  top: 250px;
+  right: 250px;
+  width: 225px;
+  height: 225px;
+  background-image: url("https://lumiere-a.akamaihd.net/v1/images/it_mary-poppins-returns_logo_light_r_dc5ac976.png?region=0,0,450,450&width=225");
+  background-size: cover;
+}
+header {
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid rgb(35,43,45);;
+}
+.container {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+.container > div {
+  float: left;
+  height: 100%;
+}
+.header_left {
+  width: 20%;
+}
+.header_right {
+  width: 80%;
+}
+.header_left img {
+  height: 100%;
+}
+.header_right .item {
+  position: relative;
+  float: right;
+  line-height: 80px;
+  padding: 0 30px;
+  height: 100%;
+}
+.header_right .item.red {
+  background: #82181F;
+}
+.header_right .item.red > a {
+  color: white;
+}
+.header_right .item:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #BA222D;
+  background: #82181F;
+}
+.header_right .item a {
+  color: rgb(35,43,45);
+  text-decoration: none;
+}
+.header_right .item:hover > a {
+  color: white;
+}
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 200px;
+  z-index: 1;
+  background: #E8E2E8;
+}
+.open {
+  display: block;
+}
+.dropdown_menu .dropdown_item {
+  padding: 0px 20px;
+  border-bottom: 1px solid rgb(35,43,45);
+}
+.dropdown_menu .dropdown_item:hover {
+  background:  #82181F;
+}
+.dropdown_menu .dropdown_item:hover a {
+  color: white;
+}
